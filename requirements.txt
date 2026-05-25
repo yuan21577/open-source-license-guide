@@ -1,0 +1,4 @@
+requests==2.28.1
+flask==2.2.2
+gpl-lib==1.0.0
+unknown-package
