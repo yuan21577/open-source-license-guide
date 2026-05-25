@@ -3,12 +3,40 @@ import os
 
 # 模拟一个本地的许可证知识库
 LICENSE_DB = {
+    # 宽松许可证 - MIT
+    "urllib3": ("MIT", "✅  宽松许可，几乎无限制"),
+    "certifi": ("MIT", "✅  宽松许可，几乎无限制"),
+    "six": ("MIT", "✅  宽松许可，几乎无限制"),
+    "python-dateutil": ("Apache 2.0", "✅  包含专利授权条款，商业友好"),
+    "pyyaml": ("MIT", "✅  宽松许可，几乎无限制"),
+    "tqdm": ("MIT / MPL-2.0", "✅  双协议，宽松许可"),
+    "click": ("BSD-3-Clause", "✅  宽松许可，禁止用作者名义背书"),
+    "pillow": ("HPND", "✅  类 MIT 宽松许可，历史悠久许可证"),
+    "pytest": ("MIT", "✅  宽松许可，几乎无限制"),
+    "beautifulsoup4": ("MIT", "✅  宽松许可，几乎无限制"),
+
+    # 宽松许可证 - Apache 2.0
     "requests": ("Apache 2.0", "✅  包含专利授权条款，商业友好"),
+    "boto3": ("Apache 2.0", "✅  包含专利授权条款，商业友好"),
+    "botocore": ("Apache 2.0", "✅  包含专利授权条款，商业友好"),
+    "sqlalchemy": ("MIT", "✅  宽松许可，几乎无限制"),
+    "celery": ("BSD-3-Clause", "✅  宽松许可，商业友好"),
+
+    # 宽松许可证 - BSD
     "flask": ("BSD-3-Clause", "✅  宽松许可，禁止用作者名义背书"),
     "django": ("BSD-3-Clause", "✅  宽松许可，商业友好"),
     "numpy": ("BSD-3-Clause", "✅  宽松许可，商业友好"),
+    "pandas": ("BSD-3-Clause", "✅  宽松许可，商业友好"),
+    "scipy": ("BSD-3-Clause", "✅  宽松许可，商业友好"),
+    "matplotlib": ("PSF / BSD-style", "✅  宽松许可，商业友好"),
+
+    # 弱传染性 - LGPL（重要：体现对弱传染性的理解）
+    "chardet": ("LGPL-2.1", "⚠️  弱传染性，动态链接可闭源，但修改库本身须开源，商业项目需评估"),
+    "pygments": ("BSD-2-Clause", "✅  宽松许可，几乎无限制"),
+
+    # 强传染性 - GPL
     "gpl-lib": ("GPL-3.0", "⚠️  传染性许可证，衍生作品须以相同协议开源，商业项目需谨慎"),
-    "urllib3": ("MIT", "✅  宽松许可，几乎无限制")
+    "mysqlclient": ("GPL-2.0", "⚠️  强传染性，商业项目若引入须整体开源或购买商业授权"),
 }
 
 def check_requirements(file_path):
