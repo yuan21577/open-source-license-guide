@@ -11,7 +11,6 @@ LICENSE_DB = {
     "urllib3": ("MIT", "✅  宽松许可，几乎无限制")
 }
 
-
 def check_requirements(file_path):
     if not os.path.exists(file_path):
         print(f"❌ 错误: 找不到文件 '{file_path}'")
