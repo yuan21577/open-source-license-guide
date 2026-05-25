@@ -1,12 +1,14 @@
-# 开源许可证合规与安全快速指南（中文版）
+# 开源许可证合规快速指南与微型 SCA 检测工具
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Language](https://img.shields.io/badge/language-Python-blue.svg)
 ![Topic](https://img.shields.io/badge/topic-license--compliance-green.svg)
 
-> 面向开发者与学习者的开源许可证合规入门指南，涵盖主流许可证对比、选择决策、SBOM 简介及自动化风险检测脚本。
+![Build Status](https://github.com/yuan21577/open-source-license-guide/actions/workflows/license-check.yml/badge.svg)
 
----
+> 本项目是基于《开源软件与安全》课程实践构建的综合指南。涵盖了主流许可证（MIT/Apache/GPL/MulanPSL）的演进与对比，并实现了一个微型的 **SCA (软件成分分析)** 脚本。
+>
+> **核心理念：** 在软件开发的最早期，通过自动化 CI/CD 流水线检测 `requirements.txt` 中的依赖合规风险，预防开源许可证传染与侵权。
 
 ## 目录
 
